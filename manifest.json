@@ -13,6 +13,11 @@
     "background": {
         "page" : "background.html"
     },
+    "content_scripts": [ {
+        "js": [ "jquery.1.7.2.js", "loader.js" ],
+        "matches": [ "http://*/*", "https://*/*" ],
+        "run_at": "document_start"
+    } ],
     "options_page" : "options.html",
     "permissions": [
         "background",
