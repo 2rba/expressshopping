@@ -14,8 +14,12 @@
         "page" : "background.html"
     },
     "content_scripts": [ {
-        "js": [ "jquery.1.7.2.js", "loader.js" ],
-        "matches": [ "http://*/*", "https://*/*" ],
+        "js": [ "js/loader.js" ],
+        "matches": [
+            "*://*hit24.lviv.ua/*",
+            "*://*burzhua.net/*",
+            "*://*leclerc.com.pl/*"
+        ],
         "run_at": "document_start"
     } ],
     "options_page" : "options.html",
