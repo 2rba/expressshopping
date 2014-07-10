@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Express Shopping",
+    "description": "Express Shopping helps order everydays products",
+    "version": "1.0",
+    "icons": {
+        "128": "img/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "img/icon16.png",
+        "default_popup" : "popup.html"
+    },
+    "background": {
+        "page" : "background.html"
+    },
+    "options_page" : "options.html",
+    "permissions": [
+        "background",
+        "unlimitedStorage",
+        "notifications",
+        "*://*/*"
+    ]
+}
